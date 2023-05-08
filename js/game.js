@@ -115,7 +115,7 @@ const loadGame = () => {
 const startTimer = () => {
 
     this.loop = setInterval(() => {
-        const currentTime = +timer.innerHTML;
+        const currentTime = Number(timer.innerHTML) ;
         timer.innerHTML = currentTime +1;
 
     }, 1000);
@@ -123,8 +123,8 @@ const startTimer = () => {
 
 window.onload = () => {
     spanPlayer.innerHTML = localStorage.getItem('player');
-    loadGame();
     startTimer();
+    loadGame();
 
 }
 
