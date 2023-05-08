@@ -123,7 +123,7 @@ const startTimer = () => {
 
 window.onload = () => {
     spanPlayer.innerHTML = localStorage.getItem('player');
-    startTimer();
     loadGame();
+    startTimer();
 }
 
