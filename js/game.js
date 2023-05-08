@@ -31,7 +31,7 @@ const checkEndGame = () => {
 
     if (disabledCards.length === 20) {
         clearInterval(this.loop);
-        alert(`Parabéns ${spanPlayer.innerHTML}! Seu tempo foi: ${timer.innerHTML} Segundos`);
+        alert(`Parabéns ${spanPlayer.innerHTML}! Seu tempo foi : ${timer.innerHTML} Segundos`);
     }
 }
 
